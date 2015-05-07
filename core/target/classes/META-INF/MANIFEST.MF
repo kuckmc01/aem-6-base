@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1431008460316
+Build-Jdk: 1.8.0_25
+Built-By: sixdimensions
+Bundle-Description: Core bundle for mk-aem
+Bundle-ManifestVersion: 2
+Bundle-Name: mk-aem - Core
+Bundle-SymbolicName: com.mk.aem.com.mk.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mk.aem.com.mk.core.filters;uses:="javax.servlet";ver
+ sion="0.0.1",com.mk.aem.com.mk.core.listeners;uses:="org.osgi.service.e
+ vent";version="0.0.1",com.mk.aem.com.mk.core.models;uses:="javax.annota
+ tion,javax.inject,org.apache.sling.api.resource,org.apache.sling.models
+ .annotations";version="0.0.1",com.mk.aem.com.mk.core;version="1.0",com.
+ mk.aem.com.mk.core.schedulers;version="0.0.1",com.mk.aem.com.mk.core.se
+ rvlets;uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.s
+ ervlets";version="0.0.1"
+Import-Package: javax.annotation,javax.inject;version="[0.0,1)",javax.se
+ rvlet,org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.reque
+ st;version="[2.4,3)",org.apache.sling.api.resource;version="[2.5,3)",or
+ g.apache.sling.api.servlets;version="[2.1,3)",org.apache.sling.commons.
+ osgi;version="[2.2,3)",org.apache.sling.models.annotations;version="[1.
+ 0,2)",org.apache.sling.settings;version="[1.3,2)",org.osgi.service.even
+ t;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?";sche
+ duler.concurrent=false;service.vendor=Adobe,osgi.service;effective:=act
+ ive;objectClass="javax.servlet.Filter";service.ranking=-700;sling.filte
+ r.scope=REQUEST;service.vendor=Adobe,osgi.service;effective:=active;obj
+ ectClass="org.osgi.service.event.EventHandler";event.topics="org/apache
+ /sling/api/resource/Resource/*";service.vendor=Adobe
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/com.mk.aem.com.mk.core.servlets.SimpleServle
+ t.xml,OSGI-INF/com.mk.aem.com.mk.core.listeners.SimpleResourceListener.
+ xml,OSGI-INF/com.mk.aem.com.mk.core.schedulers.SimpleScheduledTask.xml,
+ OSGI-INF/com.mk.aem.com.mk.core.filters.LoggingFilter.xml
+Sling-Model-Packages: com.mk.aem.com.mk.core
+Tool: Bnd-2.3.0.201405100607
