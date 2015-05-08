@@ -26,6 +26,9 @@
             <servicecomponent
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="apps/components/content/helloworld"/>
+            <testcomponent
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="apps/components/content/testcomponent"/>
             <title_1
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Lorem ipsum"

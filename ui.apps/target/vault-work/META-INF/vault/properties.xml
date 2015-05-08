@@ -4,7 +4,7 @@
 <comment>mk-aem - UI apps</comment>
 <entry key="createdBy">sixdimensions</entry>
 <entry key="name">com.mk.ui.apps</entry>
-<entry key="created">2015-05-07T10:21:01.167-0400</entry>
+<entry key="created">2015-05-08T12:53:08.452-0400</entry>
 <entry key="groupId">com.mk.aem</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
