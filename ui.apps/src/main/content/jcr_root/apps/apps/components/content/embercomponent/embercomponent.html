@@ -1,1 +1,77 @@
-<h3 id="test-me">test component</h3>
+
+<div class="container-fluid" id="ember-container"></div>
+
+    <script type="text/x-handlebars">
+        <div style="margin-bottom:15px;">
+            <ul class="nav nav-tabs">
+                <li role="presentation">{{#link-to 'index'}}Home{{/link-to}}</li>
+                <li role="presentation">{{#link-to 'spaceships'}}Spaceships{{/link-to}}</li>
+            </ul>
+        </div>
+
+        {{outlet}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="index">
+        <div class="jumbotron">
+            <h1>Spaceship Collection</h1>
+            <p>A collection of spaceships.</p>
+            <p>{{#link-to 'spaceships' class="btn btn-primary btn-lg"}}See Collection{{/link-to}}</p>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="spaceships">
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <ul class="list-group">
+                    {{#each this as |item|}}
+                    <li class="list-group-item">
+                        <p>
+                            {{#link-to 'spaceship' item }}
+                                <h3>{{item.series}} : {{item.title}}</h3>
+                            {{/link-to}}
+                        </p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                {{outlet}}
+            </div>
+        </div>
+
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="spaceship">
+        {{#if isEditable}}
+            {{#if isEditing}}
+            {{partial 'spaceship/edit'}}
+            <button {{action 'doneEditing'}}>Done</button>
+            {{else}}
+            <button {{action 'edit'}}>Edit</button>
+            {{/if}}
+        {{/if}}
+
+        <div class="thumbnail">
+            <img src="{{model.image}}" alt="{{model.title}}">
+            <div class="caption">
+                <h3>{{model.title}}</h3>
+                <h5>{{model.series}}</h5>
+                <p>{{model.description}}</p>
+                <p>Weapon systems</p>
+                <ul>
+                    {{#each model.weapons as |weapon|}}
+                    <li><p>{{weapon}}</p></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="spaceship/_edit">
+        <p>{{input type="text" value=model.title}}</p>
+        <p>{{input type="text" value=model.series}}</p>
+        <p>{{textarea value=model.description}}</p>
+    </script>
+
+

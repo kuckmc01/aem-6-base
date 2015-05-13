@@ -1,2 +1,6 @@
 #base=js
-test.js
+ember-test.js
+
+app.js
+
+

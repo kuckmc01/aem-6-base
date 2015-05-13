@@ -1,6 +1,0 @@
-com/mk/aem/com/mk/core/schedulers/SimpleScheduledTask.class
-com/mk/aem/com/mk/core/listeners/SimpleResourceListener.class
-com/mk/aem/com/mk/core/filters/LoggingFilter.class
-com/mk/aem/com/mk/core/models/HelloWorldModel.class
-com/mk/aem/com/mk/core/servlets/SimpleServlet.class
-com/mk/aem/com/mk/core/package-info.class

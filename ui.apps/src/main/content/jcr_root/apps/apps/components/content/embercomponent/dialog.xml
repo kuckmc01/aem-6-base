@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="{Long}250"
+          xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+                jcr:primaryType="cq:Widget"
+                title="Edit Alert-2B"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <alertText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Text that appears inside alert."
+                        fieldLabel="Alert Text"
+                        name="./alertText"
+                        xtype="textfield"/>
+                <buttonText
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Text that appears inside button."
+                        fieldLabel="Button Text"
+                        name="./btnText"
+                        xtype="textfield"/>
+                <buttonTarget
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Link that button targets."
+                        fieldLabel="Button Target"
+                        name="./btnTarget"
+                        suffix=".html"
+                        xtype="pathfield"/>
+            </items>
+        </tab1>
+        <tab2
+                jcr:primaryType="cq:Widget"
+                title="Edit Vertical Padding"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fieldConfigPadding
+                        jcr:primaryType="cq:Widget"
+                        xtype="vPaddingDialog"/>
+            </items>
+        </tab2>
+    </items>
+</jcr:root>

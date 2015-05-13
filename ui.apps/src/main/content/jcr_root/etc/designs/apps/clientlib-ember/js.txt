@@ -1,7 +1,6 @@
 #base=js
-vendor/require.js
-
-require-configuration.js
 
 vendor/ember.debug.js
-#vendor/ember.min.js will use this version during production
+#used for client side compilation
+vendor/ember-template-compiler.js
+vendor/ember-handlebars-loader.js

@@ -1,6 +1,0 @@
-#base=js
-vendor/require.js
-
-require-configuration.js
-
-#vendor/ember.js

@@ -29,6 +29,17 @@
             <testcomponent
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="apps/components/content/testcomponent"/>
+            <embercomponent
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="apps/components/content/embercomponent">
+                <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="ember-component"
+                    json="\[
+                    {&#xa;        &quot;id&quot;: &quot;1&quot;,&#xa;        &quot;title&quot;: &quot;Enterprise&quot;,&#xa;        &quot;series&quot;: &quot;Star Trek&quot;,&#xa;        &quot;description&quot;: &quot;The Starship Enterprise is a spaceship from the Star Trek Series&quot;,&#xa;        &quot;weapons&quot;: [&quot;photon torpedos&quot;,&quot;lasers&quot;],&#xa;        &quot;image&quot;: &quot;/content/dam/content/Enterprise.jpg&quot;&#xa;        },&#xa;        {&#xa;        &quot;id&quot;:&quot;2&quot;,&#xa;        &quot;title&quot;: &quot;Millenium Falcon&quot;,&#xa;        &quot;series&quot;: &quot;Star Wars&quot;,&#xa;        &quot;description&quot;: &quot;The Millenium Falcon is a spaceshp from the Star Wars series&quot;,&#xa;        &quot;weapons&quot;: [&quot;quad laser cannon&quot;],&#xa;        &quot;image&quot;: &quot;/content/dam/content/MFalcon.jpg&quot;&#xa;}
+                    ]">
+                </jcr:content>
+            </embercomponent>
             <title_1
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Lorem ipsum"
