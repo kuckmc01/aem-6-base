@@ -54,7 +54,7 @@ Created folder structure and files
 |    -application.js
 |---templates
 |    -application.hbs
-|---------------------------
+---------------------------
 
 
 
