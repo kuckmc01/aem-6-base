@@ -1,0 +1,7 @@
+#base=js
+vendor/require.js
+
+require-configuration.js
+
+vendor/ember.debug.js
+#vendor/ember.min.js will use this version during production

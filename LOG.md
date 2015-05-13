@@ -38,6 +38,25 @@ Created a test component to ensure requirejs works
 *****
 Decided to use "require" instead of "requirejs"
 see http://stackoverflow.com/questions/13605600/requirejs-difference-between-requirejs-and-require-functions
+############
+May 11, 2015
+############
+'''Emberjs and AEM
+*****
+Created new component named embercomponent (copied testcomponent and renamed)
+Created folder structure and files
+---------------------------
+-js
+--app
+---routes
+    -application.js
+---controllers
+    -application.js
+---templates
+    -application.hbs
+---------------------------
+
+
 
 
 
