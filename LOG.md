@@ -46,13 +46,13 @@ May 11, 2015
 Created new component named embercomponent (copied testcomponent and renamed)
 Created folder structure and files
 ---------------------------
-*-js
-*--app
-*---routes
+* -js
+* --app
+* ---routes
 *    -application.js
-*---controllers
+* ---controllers
 *    -application.js
-*---templates
+* ---templates
 *    -application.hbs
 ---------------------------
 
