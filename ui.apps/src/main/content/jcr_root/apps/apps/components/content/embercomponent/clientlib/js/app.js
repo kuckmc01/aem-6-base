@@ -1,3 +1,4 @@
+
 //shared variable between spaceships/spaceship routes
 var spaceships;
 
@@ -53,4 +54,5 @@ App.SpaceshipController = Ember.Controller.extend({
         }
     }
 });
+
 

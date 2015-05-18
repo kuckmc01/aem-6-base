@@ -3,4 +3,3 @@
 vendor/ember.debug.js
 #used for client side compilation
 vendor/ember-template-compiler.js
-vendor/ember-handlebars-loader.js

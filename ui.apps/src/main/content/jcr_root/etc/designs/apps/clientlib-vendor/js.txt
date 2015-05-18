@@ -1,5 +1,5 @@
 #base=js
-#vendor/require.js
+vendor/require.js
 
-#require-configuration.js
+require-configuration.js
 
