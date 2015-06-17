@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:mixinTypes="[rep:AccessControllable]"
+          jcr:primaryType="cq:Page">
+        <jcr:content
+                cq:designPath="/etc/designs/cloudservices"
+                cq:template="/libs/cq/cloudserviceconfigs/templates/servicepage"
+                jcr:description="Google Analytics Enabler"
+                jcr:primaryType="cq:PageContent"
+                jcr:title="Google Analytics"
+                sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+                componentReference="/apps/apps/customcloudservice/components/googleanalytics"
+                description="This is google Analytics"
+                extendeddescription="This is the extended description"
+                inclusionRank="298"
+                ranking="48"
+                serviceAdminUrl="http://www.google.com/analytics/"
+                serviceUrl="http://www.google.com/analytics/"
+                thumbnailPath="/apps/apps/customcloudservice/templates/googleanalytics/thumbnail.png"/>
+        <my-gac/>
+        <rep:policy/>
+</jcr:root>

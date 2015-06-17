@@ -5,4 +5,5 @@
     </filter>
     <filter root="/apps/sling" />
     <filter root="/etc/designs/apps"/>
+    <filter root="/etc/cloudservices/google-analytics"/>
 </workspaceFilter>
